@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image, ImageOps
 
 # โหลดโมเดลที่ฝึกไว้
-model = load_model("handwritting_model.keras")
+model = load_model("handwritting_model.keras", compile=False)
 
 st.set_page_config(page_title="MNIST Digit Recognizer",
                    page_icon= "✍️",
